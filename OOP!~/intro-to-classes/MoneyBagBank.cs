@@ -4,7 +4,7 @@ namespace MoneyBagBank
 {
   class Program {
     static void Main (string[] args) {
-      Console.WriteLine("Henlo~ World!")
+      Console.WriteLine("Henlo~ World!");
     }
   }
 
