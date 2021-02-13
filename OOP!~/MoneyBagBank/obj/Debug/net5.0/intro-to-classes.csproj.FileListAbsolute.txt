@@ -1,0 +1,15 @@
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/bin/Debug/net5.0/intro-to-classes.deps.json
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/bin/Debug/net5.0/intro-to-classes.runtimeconfig.json
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/bin/Debug/net5.0/intro-to-classes.runtimeconfig.dev.json
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/bin/Debug/net5.0/intro-to-classes.dll
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/bin/Debug/net5.0/ref/intro-to-classes.dll
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/bin/Debug/net5.0/intro-to-classes.pdb
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.csprojAssemblyReference.cache
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.AssemblyInfoInputs.cache
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.AssemblyInfo.cs
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.csproj.CoreCompileInputs.cache
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.dll
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/ref/intro-to-classes.dll
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.pdb
+/Users/rexcrusade/Desktop/practice files 📓📒/c-reps/OOP!~/MoneyBagBank/obj/Debug/net5.0/intro-to-classes.genruntimeconfig.cache
