@@ -54,5 +54,17 @@ namespace MoneyBagBank {
       var withdrawal = new Transaction(-amount, date, note);
       allTransactions.Add(withdrawal);
     }
+
+    public string GetAccountHistory() {
+      // from system builder
+      var report = new StringBuilder();
+      // report headers
+      report.AppendLine("Date\t\tAmount\tNote");
+      foreach(var item in allTransactions) {
+        // report rows
+        report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+      }
+      return report.ToString;
+    }
   }
 }
