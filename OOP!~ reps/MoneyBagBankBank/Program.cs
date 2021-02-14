@@ -6,7 +6,9 @@ namespace MoneyBagBankBank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Henlo World!~ ");
+            // Console.WriteLine("Henlo World!~ ");
+            var account = new BankAccount("Izzi", 20000000);
+            Console.WriteLine($"Ayyy!! ** GG ~ Welcome to MoneyBagBankBank! ~ Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
         }
     }
 }
