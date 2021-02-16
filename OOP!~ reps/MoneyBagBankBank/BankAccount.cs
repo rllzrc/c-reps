@@ -32,7 +32,11 @@ namespace MoneyBagBankBank {
 
     // define methods below -> blocks of code that perform a single function 
     public void MakeDepsit(decimal amount, DateTime date, string note) {
-
+      if(amount <= 0) {
+        throw new ArgumentOutOfRangeException(nameof(amount),"Ayy, amount of deposit must be positive. What is this voodoo magic?! >__<");
+      }
+      var deposit = new Transaction(amount, date, note);
+      allTransactions.Add(deposit);
     }
 
     public void MakeWithdrawal(decimal amount, DateTime date, string note) {
