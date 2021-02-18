@@ -25,9 +25,10 @@ namespace MoneyBagBankBank {
     // to open a new account -> create a new object from the BankAccount class to define, assign values, + initialize objects of this same class type. AKA the C O N S T R U C T O R ~ => can be called when you create a new object using the new keyword
     public BankAccount(string name, decimal initialBalance) {
       this.Owner = name;
-      this.Balance = initialBalance;
+      // this.Balance = initialBalance;
       this.Number = accountNumberSeed.ToString();
       accountNumberSeed += 1; 
+      MakeDepsit(initialBalance, DateTime.Now, "Initial Balance.");
     }
 
     // define methods below -> blocks of code that perform a single function 
@@ -40,7 +41,14 @@ namespace MoneyBagBankBank {
     }
 
     public void MakeWithdrawal(decimal amount, DateTime date, string note) {
-
+      if(amount <= 0) {
+        throw new ArgumentOutOfRangeException(nameof(amount), "Ayyy, wait a minute! Amount of withdrawal must be positive!");
+      }
+      if(Balance - amount < 0) {
+        throw new InvalidOperationException("Ayy, hold up! Not enough sufficient funds for this withdrawal.");
+      }
+      var withdrawal = new Transaction(-amount, date, note);
+      allTransactions.Add(withdrawal);
     }
   }
 }
