@@ -22,8 +22,22 @@ namespace Fundamentals
     class Program
     {
         static void Main(string[] args)
-        {
+        {   // * below is an example of a statement => actions that a program takes are expressed within -> common ones include declaring variables, assigning values, calling methods/funcs, looping, etc.
             Console.WriteLine("Henlo World!~");
-        }
+
+            // * below are examples of variables aka name identifiers that can be assigned to a variable
+            // can be updated anytime after they are created aka reassigment 
+            // * CONSTANTS are variables whose values can never be changed~ => value set at compile time + must be initialized when they are decalred
+            char firstLetter = 'I';
+            string firstName = "Izzi";
+            bool didYouHaveCoffeeAlready = false;
+            int angelNumber = 333;
+            // * the M suffix on numbers is how you indicate that a constant should use the decimal type 
+            // * decimal type = smaller range but greater precision
+            decimal min = 5.0M;
+            double pi = 3.14159;
+
+            Console.WriteLine($"Henlo~ {firstName}! Please provide your unique identifier label {firstLetter} in the field below. If you wish to skip coffee, indicate here {didYouHaveCoffeeAlready}. Great news! Your Angel Number for the day is {angelNumber}. Here are some more funky numbers {min} and {pi}. Enjoy!");
+        }   
     }
 }
