@@ -25,7 +25,7 @@ namespace Fundamentals
         {   // * below is an example of a statement => actions that a program takes are expressed within -> common ones include declaring variables, assigning values, calling methods/funcs, looping, etc.
             Console.WriteLine("Henlo World!~");
 
-            // * below are examples of variables aka name identifiers that can be assigned to a variable
+            // * below are examples of V A R I A B L E S ~ aka name identifiers that can be assigned to a variable
             // can be updated anytime after they are created aka reassigment 
             // * CONSTANTS are variables whose values can never be changed~ => value set at compile time + must be initialized when they are decalred
             char firstLetter = 'I';
@@ -38,6 +38,21 @@ namespace Fundamentals
             double pi = 3.14159;
 
             Console.WriteLine($"Henlo~ {firstName}! Please provide your unique identifier label {firstLetter} in the field below. If you wish to skip coffee, indicate here {didYouHaveCoffeeAlready}. Great news! Your Angel Number for the day is {angelNumber}. Here are some more funky numbers {min} and {pi}. Enjoy!");
+
+            // * MIN/MAX VALUES EXERCISE:
+            int maxValue = int.MaxValue;
+            maxValue += 1;
+            Console.WriteLine($"Check out what happens when we increment an int to max value: {maxValue}");
+
+            // * IMPLICIT TYPES:
+            // pro-tip: vars must have a type + cannot change after they are declared (can only contain values that match their type)
+            // using the var keyword allows the compiler to determine type by evaluating the value on the right side of the equals sign => only works if the variable is being I N I T I A L I Z E D ~
+            var areYouCaffienated;
+            var thisIsAnInt = 444;
+            var thisIsADouble = 1.5;
+            var thisIsALetter = 'Z';
+            var thisIsAString = "Get me coffee please!";
+            Console.WriteLine($"Implicit types are as follows:")
         }   
     }
 }
