@@ -47,12 +47,12 @@ namespace Fundamentals
             // * IMPLICIT TYPES:
             // pro-tip: vars must have a type + cannot change after they are declared (can only contain values that match their type)
             // using the var keyword allows the compiler to determine type by evaluating the value on the right side of the equals sign => only works if the variable is being I N I T I A L I Z E D ~
-            var areYouCaffienated;
+            var areYouCaffienated =true;
             var thisIsAnInt = 444;
             var thisIsADouble = 1.5;
             var thisIsALetter = 'Z';
             var thisIsAString = "Get me coffee please!";
-            Console.WriteLine($"Implicit types are as follows:")
+            Console.WriteLine($"Implicit types are as follows: boolean -> {areYouCaffienated}, int -> {thisIsAnInt}, double -> {thisIsADouble} -> {thisIsALetter}, -> {thisIsAString}");
         }   
     }
 }
