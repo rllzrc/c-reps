@@ -80,9 +80,25 @@ namespace Fundamentals
             double typeA = 15551;
             double typeB = 777.777;
             double typeC = 123.456;
-            typeX = typeA;
-            typeY = typeB;
-            typeZ = typeC;
+            // pro-tip: ints can be stored in a double
+            // no special syntax is required bc the conversion is type safe, no data will be lost => implicit conversion
+            double typeDoubleX = typeX;
+            double typeDoubleY = typeY;
+            double typeDoubleZ = typeZ;
+            // ~ EXPLICIT conversion => requires a (CAST) operator because the information might be lost
+            // * int typeIntA = typeA; => this does not compile because a double is LARGER than an int -> in this example all the decimal places will be lost
+            // * to store a double in an int => you have to (CAST) the double to the int type
+            int typeIntA = (int)typeA;
+            int typeIntB = (int)typeB; // -> will contain only int part of the double, no rounding occurs just takes the in part minus decimal places
+            int typeIntC = (int)typeC;
+            // more explicit conversion examples:
+            int xCastExample = 4;
+            int yCastExample = 5;
+            double zCastExample = 4 / 5; // -> returns int part of 0.8 = 0
+            // * fix with casting:
+            // will force the expression to evaluate to a double by casting either operand in the division expression to a double
+            double zCasted = (double) 4 / 5;    
+            Console.WriteLine($"*~ TYPE CONVERSIONS *~ : {xCastExample}, {yCastExample}, {zCastExample}, {zCasted}");
         }   
     }
 }
