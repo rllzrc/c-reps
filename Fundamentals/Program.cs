@@ -53,6 +53,25 @@ namespace Fundamentals
             var thisIsALetter = 'Z';
             var thisIsAString = "Get me coffee please!";
             Console.WriteLine($"Implicit types are as follows: boolean -> {areYouCaffienated}, int -> {thisIsAnInt}, double -> {thisIsADouble} -> {thisIsALetter}, -> {thisIsAString}");
+
+            // * O P E R A T O R S:
+            int x = 1111;
+            int y = 555;
+            int z1 = x += 1;
+            int z2 = ++y;
+            Console.WriteLine($"~** OPERATORS **~ The values of int x & y are: {x}, {y}. The values of int z1 & z2 are {z1}, {z2}. Ayyyye ~");
+
+            // * M A T H 
+            int xMath = 333;
+            int yMath = 222;
+            int zMath = 888;
+            int aMath = (xMath + zMath) * yMath;
+            int bMath = xMath + yMath + zMath;
+            int cMath = xMath % (yMath * zMath);
+            var isXMathEven = xMath % 2 == 0 ? true : false;
+            var isYDivisibleBy3 = yMath % 3 == 0 ? true : false;
+            double roundDoubleToThreeDecimalPlaces = Math.Round(3.14159, 3);
+            Console.WriteLine($"{roundDoubleToThreeDecimalPlaces}");
         }   
     }
 }
