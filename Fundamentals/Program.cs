@@ -72,6 +72,17 @@ namespace Fundamentals
             var isYDivisibleBy3 = yMath % 3 == 0 ? true : false;
             double roundDoubleToThreeDecimalPlaces = Math.Round(3.14159, 3);
             Console.WriteLine($"{roundDoubleToThreeDecimalPlaces}");
+
+            // * T Y P E ~ CONVERSIONS!
+            int typeX = 555;
+            int typeY = 777;
+            int typeZ = 1234;
+            double typeA = 15551;
+            double typeB = 777.777;
+            double typeC = 123.456;
+            typeX = typeA;
+            typeY = typeB;
+            typeZ = typeC;
         }   
     }
 }
