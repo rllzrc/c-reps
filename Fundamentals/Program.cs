@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 /*
 this is an example of a multi-line comment! YAY!
@@ -105,7 +106,22 @@ namespace Fundamentals
             var multiLineString = "Henlo!~ This is a string\nthat prints\non three lines";
             // string literals: starts w @ symbol => v useful for file paths
             var filePath2 = @"c:\practiceFiles\stringLiterals.txt";
-            Console.WriteLine($"*~ S T R I N G S *~ : Here is an example of escape sequences: FilePath = {filePath}, Multiple Lines: {multiLineString}, stringLiterals: {filePath2}");
+            // Console.WriteLine($"*~ S T R I N G S *~ : Here is an example of escape sequences: FilePath = {filePath}, Multiple Lines: {multiLineString}, stringLiterals: {filePath2}");
+            // * pro-tip on string operations: none of the operations change the existing string -- they return new ones!
+            string greeting = "Henlo~! Nice to meet ya,";
+            string firstName2 = "McKinsey!";
+            string pickYoFlavor = "Spicy or Nah?";
+            string pickYoFlavor2 = "Sweet or Salty?";
+            string comboFlavors = pickYoFlavor + " " + pickYoFlavor2;
+            Console.WriteLine($"{greeting} {firstName2} Would you like something to eat? {pickYoFlavor} ...or {comboFlavors}");
+            // accessing length property
+            Console.WriteLine($"Phrase: {greeting} // Length: {greeting.Length}");
+            // indexing ~
+            string indexPractice = "fakejersey";
+            Console.WriteLine($"In all caps: {indexPractice.ToUpper()}, in all lowercase: {indexPractice.ToLower()}");
+
         }   
     }
 }
+
+
