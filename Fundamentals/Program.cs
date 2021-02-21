@@ -117,9 +117,13 @@ namespace Fundamentals
             // accessing length property
             Console.WriteLine($"Phrase: {greeting} // Length: {greeting.Length}");
             // indexing ~
-            string indexPractice = "fakejersey";
-            Console.WriteLine($"In all caps: {indexPractice.ToUpper()}, in all lowercase: {indexPractice.ToLower()}");
-
+            string indexPractice = "fakejerseyy";
+            int middle = indexPractice.Length % 2 == 1 ? indexPractice.Length / 2 : indexPractice.Length / 2 - 1;
+            char firstIndexChar = indexPractice[0];
+            char middleIndexChar = indexPractice[middle];
+            char lastIndexChar = indexPractice[indexPractice.Length - 1];
+            string indexPracticeConcat = String.Concat(firstIndexChar, middleIndexChar, lastIndexChar);
+            Console.WriteLine($"In all caps: {indexPractice.ToUpper()}, in all lowercase: {indexPractice.ToLower()}, concatenated with first, mid, last char: {indexPracticeConcat}");
         }   
     }
 }
