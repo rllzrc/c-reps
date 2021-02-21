@@ -124,6 +124,13 @@ namespace Fundamentals
             char lastIndexChar = indexPractice[indexPractice.Length - 1];
             string indexPracticeConcat = String.Concat(firstIndexChar, middleIndexChar, lastIndexChar);
             Console.WriteLine($"In all caps: {indexPractice.ToUpper()}, in all lowercase: {indexPractice.ToLower()}, concatenated with first, mid, last char: {indexPracticeConcat}");
+            // trimming / getting parts of strings
+            string trimThis = "Wonderland";
+            // string trimThisEnd = trimThis.TrimEnd('d');
+            // string trimThisBoth = trimThisEnd.TrimStart('W');
+            string trimThisSubstring = trimThis.Substring(1, trimThis.Length - 1);
+            // string trimThisSubstring = trimThis.Remove(trimThis.Length - 1, 1);
+            Console.WriteLine($"~* TRIMMED STRING *~ : {trimThisSubstring}");
         }   
     }
 }
