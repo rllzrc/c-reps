@@ -37,12 +37,12 @@ namespace Fundamentals
             decimal min = 5.0M;
             double pi = 3.14159;
 
-            Console.WriteLine($"Henlo~ {firstName}! Please provide your unique identifier label {firstLetter} in the field below. If you wish to skip coffee, indicate here {didYouHaveCoffeeAlready}. Great news! Your Angel Number for the day is {angelNumber}. Here are some more funky numbers {min} and {pi}. Enjoy!");
+            // Console.WriteLine($"Henlo~ {firstName}! Please provide your unique identifier label {firstLetter} in the field below. If you wish to skip coffee, indicate here {didYouHaveCoffeeAlready}. Great news! Your Angel Number for the day is {angelNumber}. Here are some more funky numbers {min} and {pi}. Enjoy!");
 
             // * MIN/MAX VALUES EXERCISE:
             int maxValue = int.MaxValue;
             maxValue += 1;
-            Console.WriteLine($"Check out what happens when we increment an int to max value: {maxValue}");
+            // Console.WriteLine($"Check out what happens when we increment an int to max value: {maxValue}");
 
             // * IMPLICIT TYPES:
             // pro-tip: vars must have a type + cannot change after they are declared (can only contain values that match their type)
@@ -52,14 +52,14 @@ namespace Fundamentals
             var thisIsADouble = 1.5;
             var thisIsALetter = 'Z';
             var thisIsAString = "Get me coffee please!";
-            Console.WriteLine($"Implicit types are as follows: boolean -> {areYouCaffienated}, int -> {thisIsAnInt}, double -> {thisIsADouble} -> {thisIsALetter}, -> {thisIsAString}");
+            // Console.WriteLine($"Implicit types are as follows: boolean -> {areYouCaffienated}, int -> {thisIsAnInt}, double -> {thisIsADouble} -> {thisIsALetter}, -> {thisIsAString}");
 
             // * O P E R A T O R S:
             int x = 1111;
             int y = 555;
             int z1 = x += 1;
             int z2 = ++y;
-            Console.WriteLine($"~** OPERATORS **~ The values of int x & y are: {x}, {y}. The values of int z1 & z2 are {z1}, {z2}. Ayyyye ~");
+            // Console.WriteLine($"~** OPERATORS **~ The values of int x & y are: {x}, {y}. The values of int z1 & z2 are {z1}, {z2}. Ayyyye ~");
 
             // * M A T H 
             int xMath = 333;
@@ -71,7 +71,7 @@ namespace Fundamentals
             var isXMathEven = xMath % 2 == 0 ? true : false;
             var isYDivisibleBy3 = yMath % 3 == 0 ? true : false;
             double roundDoubleToThreeDecimalPlaces = Math.Round(3.14159, 3);
-            Console.WriteLine($"{roundDoubleToThreeDecimalPlaces}");
+            // Console.WriteLine($"*~ M A T H *~ : {roundDoubleToThreeDecimalPlaces}");
 
             // * T Y P E ~ CONVERSIONS!
             int typeX = 555;
@@ -98,7 +98,14 @@ namespace Fundamentals
             // * fix with casting:
             // will force the expression to evaluate to a double by casting either operand in the division expression to a double
             double zCasted = (double) 4 / 5;    
-            Console.WriteLine($"*~ TYPE CONVERSIONS *~ : {xCastExample}, {yCastExample}, {zCastExample}, {zCasted}");
+            // Console.WriteLine($"*~ TYPE CONVERSIONS *~ : {xCastExample}, {yCastExample}, {zCastExample}, {zCasted}");
+
+            // * S T R I N G S!
+            var filePath = "c:\\practiceFiles\\practiceExercise.txt";
+            var multiLineString = "Henlo!~ This is a string\nthat prints\non three lines";
+            // string literals: starts w @ symbol => v useful for file paths
+            var filePath2 = @"c:\practiceFiles\stringLiterals.txt";
+            Console.WriteLine($"*~ S T R I N G S *~ : Here is an example of escape sequences: FilePath = {filePath}, Multiple Lines: {multiLineString}, stringLiterals: {filePath2}");
         }   
     }
 }
