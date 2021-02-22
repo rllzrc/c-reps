@@ -131,6 +131,12 @@ namespace Fundamentals
             string trimThisSubstring = trimThis.Substring(1, trimThis.Length - 1);
             // string trimThisSubstring = trimThis.Remove(trimThis.Length - 1, 1);
             Console.WriteLine($"~* TRIMMED STRING *~ : {trimThisSubstring}");
+            // ~ S E A R C H I N G ~
+            string xSearch = "21savage";
+            string ySearch = "metroboomin";
+            int indexYFirstOccurrence = xSearch.IndexOf('e');
+            bool isYCharInXSearch = xSearch.Contains(ySearch);
+            Console.WriteLine($"Index of first Occurence of char Y in string X: {indexYFirstOccurrence} // Contains(): {isYCharInXSearch}");
         }   
     }
 }
