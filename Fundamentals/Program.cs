@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Globalization;
+using System.IO;
+// using System.Text;
 
 /*
 this is an example of a multi-line comment! YAY!
@@ -137,6 +139,13 @@ namespace Fundamentals
             int indexYFirstOccurrence = xSearch.IndexOf('e');
             bool isYCharInXSearch = xSearch.Contains(ySearch);
             Console.WriteLine($"Index of first Occurence of char Y in string X: {indexYFirstOccurrence} // Contains(): {isYCharInXSearch}");
+            string searchFilePath = @"c:\21savage-metro-boomin\savagemode\ii.mp8";
+            string path = @"C:\21savage-metro-boomin\savagemode\";
+            string searchFilePathNoExt;
+            searchFilePathNoExt = Path.GetFileNameWithoutExtension(searchFilePath);
+            char searchFilePathDriveLetter = path[0];
+            Console.WriteLine($"~*F I L E NAME W/O EXT: {searchFilePathNoExt} // PATH DRIVE LETTER IN CAPS: {searchFilePathDriveLetter}");
+
         }   
     }
 }
