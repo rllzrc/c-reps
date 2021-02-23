@@ -145,7 +145,10 @@ namespace Fundamentals
             searchFilePathNoExt = Path.GetFileNameWithoutExtension(searchFilePath);
             char searchFilePathDriveLetter = path[0];
             Console.WriteLine($"~*F I L E NAME W/O EXT: {searchFilePathNoExt} // PATH DRIVE LETTER IN CAPS: {searchFilePathDriveLetter}");
-
+            // S P L I T T I N G:
+            string splitExample = "mool mantra by martyrs of sound";
+            string[] splitString = splitExample.Split(' ');
+            Console.WriteLine($"~* S P L I T string: {splitString}");
         }   
     }
 }
