@@ -149,6 +149,15 @@ namespace Fundamentals
             string splitExample = "mool mantra by martyrs of sound";
             string[] splitString = splitExample.Split(' ');
             Console.WriteLine($"~* S P L I T string: {splitString}");
+            // FORMATTING STRINGS
+            // * pro-tip: if you need to insert a value of an object, variable, or expression into another string. ex: insert the value of a decimal
+            decimal formatPrice = 11.11m;
+            string formatPriceString = String.Format("The current price is {0} per juice box. Yumyum enjoy!", formatPrice);
+            Console.WriteLine($"~* FORMATTING string: {formatPriceString}");
+            double formatPrice2 = 123.456;
+            string formatPriceString2 = String.Format(formatPrice2 % 1 == 0 ? "{0:0}" : "{0:0.00}", formatPrice2);
+            Console.WriteLine($"~* FORMATTING DOUBLE string: {formatPriceString2}");
+
         }   
     }
 }
