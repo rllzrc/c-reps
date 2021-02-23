@@ -189,6 +189,18 @@ namespace Fundamentals
             firstBookToRead.author = "Stephen Mitchell";
             firstBookToRead.price = 13.79;
             Console.WriteLine($"~* S T R U C T: {firstBookToRead.title}");
+
+            // * ~ P A R T II ~ *
+            // @CONDITIONALS! -> if / else:
+            int ifElseX = 1;
+            if(ifElseX < 100) {
+                Console.WriteLine($"Integer {ifElseX} is less than 100. Woop~");
+            } else if(ifElseX == 100) {
+                Console.WriteLine($"Integer {ifElseX} is right on the montey! Woohoo!");
+            } else {
+                Console.WriteLine($"Integer {ifElseX} is over 100!");
+            }
+
         }   
     }
 }
