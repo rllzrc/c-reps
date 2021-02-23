@@ -22,6 +22,13 @@ main method = aka the entry point of the program, where it starts when it is ran
 
 namespace Fundamentals
 {
+    enum birdFrands {
+                Pigeon,
+                mourningDove,
+                Cardinal,
+                littleBrownBirds,
+                Bluejay
+            }
     class Program
     {
         static void Main(string[] args)
@@ -158,6 +165,13 @@ namespace Fundamentals
             string formatPriceString2 = String.Format(formatPrice2 % 1 == 0 ? "{0:0}" : "{0:0.00}", formatPrice2);
             Console.WriteLine($"~* FORMATTING DOUBLE string: {formatPriceString2}");
 
+            // E N U M E R A T I O N S ~
+            // a distinct type consisting of a set of named constants => typically used to store a collection of related values
+            // each constant is accessed by name but also has a numeric value -> default type is int, starts at 0 incremented by 1
+            var faveBirdFriend = birdFrands.Cardinal;
+            // to convert from enum to int, cast it!
+            var faveBirdFriendInt = (int) faveBirdFriend;
+            Console.WriteLine($"~* ENUMS *~ : faveBird: {faveBirdFriend} // faveBirdInt: {faveBirdFriendInt}");
         }   
     }
 }
