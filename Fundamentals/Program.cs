@@ -29,6 +29,13 @@ namespace Fundamentals
                 littleBrownBirds,
                 Bluejay
             }
+    
+    public struct bookList {
+        public string title;
+        public string author;
+        public double price;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -172,6 +179,16 @@ namespace Fundamentals
             // to convert from enum to int, cast it!
             var faveBirdFriendInt = (int) faveBirdFriend;
             Console.WriteLine($"~* ENUMS *~ : faveBird: {faveBirdFriend} // faveBirdInt: {faveBirdFriendInt}");
+
+            // S T R U C T S !!~
+            // a type that acts as a container for related variables
+            // to initialize a struct type, use NEW~ keyword (instantiation) -- to access struct "members" use the member access operator (dot .)
+            // structs are just blueprints
+            var firstBookToRead = new bookList();
+            firstBookToRead.title = "Bhagavad Gita: A New Translation";
+            firstBookToRead.author = "Stephen Mitchell";
+            firstBookToRead.price = 13.79;
+            Console.WriteLine($"~* S T R U C T: {firstBookToRead.title}");
         }   
     }
 }
