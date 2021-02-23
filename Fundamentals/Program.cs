@@ -192,13 +192,13 @@ namespace Fundamentals
 
             // * ~ P A R T II ~ *
             // @CONDITIONALS! -> if / else:
-            int ifElseX = 1;
-            if(ifElseX < 100) {
-                Console.WriteLine($"Integer {ifElseX} is less than 100. Woop~");
-            } else if(ifElseX == 100) {
-                Console.WriteLine($"Integer {ifElseX} is right on the montey! Woohoo!");
+            int conditionalX = 1;
+            if(conditionalX < 100) {
+                Console.WriteLine($"Integer {conditionalX} is less than 100. Woop~");
+            } else if(conditionalX == 100) {
+                Console.WriteLine($"Integer {conditionalX} is right on the montey! Woohoo!");
             } else {
-                Console.WriteLine($"Integer {ifElseX} is over 100!");
+                Console.WriteLine($"Integer {conditionalX} is over 100!");
             }
 
         }   
