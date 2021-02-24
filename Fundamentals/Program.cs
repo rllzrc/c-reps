@@ -3,6 +3,8 @@ using System.Globalization;
 using System.IO;
 // using System.Text;
 
+// * !!! C# Fundamentals R E P S ~ *
+
 /*
 this is an example of a multi-line comment! YAY!
 namespace = named groups that contain classes -> all classes must be in a namespace
@@ -230,6 +232,17 @@ namespace Fundamentals
                 default:
                 Console.WriteLine("The bird friend is waiting! Keep an eye out for these lovely messengers. ~");
                 break;
+            }
+
+            // order of operations ~
+            string orderString = "Good Intentions";
+            if(orderString.Length < 5 && orderString.Length % 2 != 0) {
+                Console.WriteLine($"~ * O R D E R of Ops: The given string is less than 5 chars long and it is not an even number in terms of l e n g t h."
+                );
+            } else if(orderString.Length >= 10 && orderString.Length % 2 == 0) {
+                Console.WriteLine($"~ * O R D E R of Ops: The given string is greater than or equal to 10 chars long and it is an even number in terms of l e n g t h.");
+            } else {
+                Console.WriteLine("~ * O R D E R of Ops: The given string does not match the conditional operators in this given exercise.");
             }
 
         }   
