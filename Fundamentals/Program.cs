@@ -26,7 +26,7 @@ namespace Fundamentals
                 Pigeon,
                 mourningDove,
                 Cardinal,
-                littleBrownBirds,
+                songSparrow,
                 Bluejay
             }
     
@@ -199,6 +199,37 @@ namespace Fundamentals
                 Console.WriteLine($"Integer {conditionalX} is right on the montey! Woohoo!");
             } else {
                 Console.WriteLine($"Integer {conditionalX} is over 100!");
+            }
+
+            // @ SWITCH statements ~
+            // can only compare against the same value for each check => useful when you know the values you wanna compare against (only equality checks, no < or >)
+            // v useful with enums as they're specific, pre-defined values
+            // pro-tip: you can stack multiple cases on a "branch" to the same code -> aka falling through the next case
+            var birdFrand = birdFrands.Bluejay;
+            switch (birdFrand) {
+                case birdFrands.Bluejay:
+                Console.WriteLine("Ahh the bluejay! An unmistakeable and intelligent friend! You can't miss its perky crest & sounds from this beloved songbird.");
+                break;
+
+                case birdFrands.Cardinal:
+                Console.WriteLine("The beauty and boldness of a Cardinal is definitely hard to miss! They say if they are near, your ancestors are watching over you and that the angels are near. It is a symbol of love and protection.");
+                break;
+
+                case birdFrands.songSparrow:
+                Console.WriteLine("This melodious friend is among the most familiar birds in widespread North America. They say this represents hardwork, diligence, and persistence. This spirit guide likes to remind you to express your most creative self and to be happy! (:");
+                break;
+
+                case birdFrands.Pigeon:
+                Console.WriteLine("The classic NYC bird! Aka Rock Pigeon or Doves, they've learned to adapt in cities. Some think they are a nuisance, but we're not about that energy. They're amazing! Strong fliers, they're actually v clean, and are v smart creatures!");
+                break;
+
+                case birdFrands.mourningDove:
+                Console.WriteLine("The prescence of a Mourning Dove is rather a rare sight as they aren't easily trustworthy creatures. They're v elegant (yet fierce) and symbolize as a spiritual messenger of love, peace, and faith. They encourage healing and devotion. A beautiful sight!");
+                break;
+
+                default:
+                Console.WriteLine("The bird friend is waiting! Keep an eye out for these lovely messengers. ~");
+                break;
             }
 
         }   
