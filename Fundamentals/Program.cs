@@ -245,6 +245,19 @@ namespace Fundamentals
                 Console.WriteLine("~ * O R D E R of Ops: The given string does not match the conditional operators in this given exercise.");
             }
 
+            // refactored above using nested conditionals, need to tweak to hit all clauses
+            if(orderString.Length < 5) {
+                if(orderString.Length % 2 == 1) {
+                    Console.WriteLine("Ayy nested conditional over here stating the string given is less than 5 chars long and its pretty uneven.");
+                }
+            } else if(orderString.Length >= 10) {
+                if(orderString.Length % 2 == 0) {
+                    Console.WriteLine("Ayy nested conditional over here stating the string given is greater than or equal to 10 chars long and its pretty uneven.");
+                }
+            } else {
+                Console.WriteLine("Ayy nested conditional over here stating the given string does not match any of the above conditions. -___-");
+            }
+
         }   
     }
 }
