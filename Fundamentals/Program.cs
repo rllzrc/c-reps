@@ -258,6 +258,25 @@ namespace Fundamentals
                 Console.WriteLine("Ayy nested conditional over here stating the given string does not match any of the above conditions. -___-");
             }
 
+            // * ~ L O O P S !! ~ *
+            // @while loops:
+
+            // int n = 0;
+            // while (n < 9) {
+            //     Console.WriteLine(n);
+            //     n += 1;
+            // }
+
+            string whileString = "0123456789";
+            int start = 0;
+            int end = whileString.Length;
+            while(start < end) {
+                if(whileString[start] % 2 != 0) {
+                    Console.WriteLine(whileString[start]);
+                }
+                start += 1;
+            }
+        
         }   
     }
 }
