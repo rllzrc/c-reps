@@ -270,13 +270,22 @@ namespace Fundamentals
             string whileString = "0123456789";
             int start = 0;
             int end = whileString.Length;
-            while(start < end) {
+            // while(start < end) {
+            //     if(whileString[start] % 2 != 0) {
+            //         Console.WriteLine(whileString[start]);
+            //     }
+            //     start += 1;
+            // }
+
+            // @do while loop
+            // similar to while loops except that the first iteration is always executed
+            do {
                 if(whileString[start] % 2 != 0) {
                     Console.WriteLine(whileString[start]);
                 }
                 start += 1;
             }
-        
+            while(start < end);
         }   
     }
 }
