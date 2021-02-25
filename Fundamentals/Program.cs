@@ -279,13 +279,20 @@ namespace Fundamentals
 
             // @do while loop
             // similar to while loops except that the first iteration is always executed
-            do {
-                if(whileString[start] % 2 != 0) {
-                    Console.WriteLine(whileString[start]);
+            // do {
+            //     if(whileString[start] % 2 != 0) {
+            //         Console.WriteLine(whileString[start]);
+            //     }
+            //     start += 1;
+            // }
+            // while(start < end);
+
+            // refactored above w @for loop:
+            for(int i = 0; i < end; i += 1) {
+                if(whileString[i] % 2 != 0) {
+                    Console.WriteLine(whileString[i]);
                 }
-                start += 1;
             }
-            while(start < end);
         }   
     }
 }
