@@ -288,9 +288,17 @@ namespace Fundamentals
             // while(start < end);
 
             // refactored above w @for loop:
-            for(int i = 0; i < end; i += 1) {
-                if(whileString[i] % 2 != 0) {
-                    Console.WriteLine(whileString[i]);
+            // for(int i = 0; i < end; i += 1) {
+            //     if(whileString[i] % 2 != 0) {
+            //         Console.WriteLine(whileString[i]);
+            //     }
+            // }
+
+            // refactored above w @foreach loop
+            // nice for looping through a collection => "enumerating" 
+            foreach(char c in whileString) {
+                if(c % 2 != 0) {
+                    Console.WriteLine(c);
                 }
             }
         }   
