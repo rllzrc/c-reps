@@ -301,6 +301,18 @@ namespace Fundamentals
                     Console.WriteLine(c);
                 }
             }
+
+            // @loop flow control
+            string loopFlow = "talk to me nice, or don't talk at all";
+            for(int i = 1; i < loopFlow.Length; i += 1) {
+                int firstChar = loopFlow[0];
+                int current = loopFlow[i];
+                Console.WriteLine(current);
+                if(firstChar == current) {
+                    Console.WriteLine(current);
+                }
+            }
+
         }   
     }
 }
