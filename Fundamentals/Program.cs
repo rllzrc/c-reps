@@ -313,6 +313,12 @@ namespace Fundamentals
                 }
             }
 
+            // ~ * A R R A Y S !! * ~
+            int[] array1 = new int[10];
+            while(array1.Length <= 10) {
+                array1.Add()
+            }
+
         }   
     }
 }
