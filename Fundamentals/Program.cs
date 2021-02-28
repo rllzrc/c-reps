@@ -316,9 +316,10 @@ namespace Fundamentals
             }
 
             // ~ * A R R A Y S !! * ~
-            int[] array1 = new int[10];
-            while(array1.Length <= 10) {
-                array1.Add()
+            int[] array1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int iArray = 0;
+            while(iArray < array1.Length) {
+                Console.WriteLine(array1[iArray++]);
             }
 
         }   
