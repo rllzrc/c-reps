@@ -17,6 +17,19 @@ public class Program {
       InsertBefore(Head, node);
     }
 
+    public void InsertBefore(Node node, Node nodeToInsert) {
+      if(nodeToInsert == Head && nodeToInsert == Tail) return;
+      Remove(nodeToInsert);
+      nodeToInsert.Prev = node.Prev;
+      nodeToInsert.Next = node;
+      if(node.Prev == null) {
+        Head = nodeToInsert;
+      } else {
+        node.Prev.Next = nodeToInsert;
+      }
+      node.Prev = nodeToInsert;
+    }
+
     // Node constructor
     public class Node {
       public int Value;
