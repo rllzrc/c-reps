@@ -16,5 +16,16 @@ public class Program {
       // invoke insert head before method here to set head if it already exists prior to setting a new value
       InsertBefore(Head, node);
     }
+
+    // Node constructor
+    public class Node {
+      public int Value;
+      public Node Prev;
+      public Node Next;
+
+      public Node(int value) {
+        this.Value = value;
+      }
+    }
   }
 }
